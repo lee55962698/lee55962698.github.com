@@ -1,9 +1,13 @@
 ---
 layout: post
-category : lessons
-tags : [intro, beginner, jekyll, tutorial]
+category : web
+tags : [jekyll, blog]
 ---
 {% include JB/setup %}
+
+这是Jekyll自带的一份介绍，按理在安装完成之后是应该删掉的，而本来就想写一篇介绍Jekyll的文章，现在觉得没有必要了。如果想在windows下使用的话（强烈不推荐），你可能需要用到[这篇文章](http://sinosmond.github.com/blog/2012/03/12/install-and-deploy-octopress-to-github-on-windows7-from-scratch/)，几乎涉及到了我遇到的所有问题。
+
+-----------
 
 This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.
 Directly following the intro we'll learn exactly _how_ Jekyll does what it does.
@@ -18,12 +22,6 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
 ### Examples
 
 This website is created with Jekyll. [Other Jekyll websites](https://github.com/mojombo/jekyll/wiki/Sites).
-
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
 
 ### What does Jekyll Do?
 
