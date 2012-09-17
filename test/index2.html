@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+	<meta name="format-detection" content="telephone=no">
+	<title>贴吧测试页面</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+	<div id="top_kit">
+	<div class="fl">
+	<a class="current_status">全部</a><span>|</span><a href="m?kw=%E5%8D%8E%E4%B8%AD%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6&amp;lm=4&amp;lp=5025&amp;pinf=1_2_0">精品区</a><span>|</span><a href="m?tn=bdAlbLst&amp;word=%E5%8D%8E%E4%B8%AD%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6&amp;lp=3001&amp;pinf=1_2_0">图片区</a>
+	</div>
+	<div><a href="m?kw=%E5%8D%8E%E4%B8%AD%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6&amp;lm=&amp;lp=5024" class="fr" id="refurbish"></a>
+	<a href="#" class="fr" id="_post"></a></div></div>
+	<div id="tlist" class="">
+	<ul class="list line">
+	<li class="top live"><a href="m?kz=7280169&amp;lp=5028&amp;is_bakan=0&amp;new_word=test&amp;pinf=1_2_0"><span class="layTop live">直播<em></em></span><span>dddddd<span></span></span></a></li>
+	<li class="top"><a href="m?kz=7278599&amp;lp=5028&amp;is_bakan=0&amp;pinf=1_2_0"><span class="layTop">置顶<em></em></span><span>贴吧自动化测试_2012-04-16-14-57-57<span></span></span></a></li>
+	<li tid="7290786"><a href="m?kz=7290786&amp;lp=5028&amp;is_bakan=0&amp;pinf=1_2_0" class="fTxt"><span class="tie_icon">0</span><span class="tie_text">来能轮的来阳身身空1</span><div class="fInfo"><span>作者:abc</span>|<span>最后回复:abc 9-13</span></div></a></li>
+	<li tid="7290785"><a href="m?kz=7290785&amp;lp=5028&amp;is_bakan=0&amp;pinf=1_2_0" class="fTxt"><span class="tie_icon">0</span><span class="tie_text">身间轮匆是如阳脚的1</span><div class="fInfo"><span>作者:abc</span>|<span>最后回复:abc 9-13</span></div></a></li>
+	<li tid="7290784"><a href="m?kz=7290784&amp;lp=5028&amp;is_bakan=0&amp;pinf=1_2_0" class="fTxt"><span class="tie_icon">0</span><span class="tie_text">一都望he亮们由每看1</span><div class="fInfo"><span>作者:abc</span>|<span>最后回复:abc 9-13</span></div></a></li>
+	<li tid="7290779"><a href="m?kz=7290779&amp;lp=5028&amp;is_bakan=0&amp;pinf=1_2_0" class="fTxt"><span class="tie_icon">0</span><span class="tie_text">亮阳停扯的够没社能1</span><div class="fInfo"><span>作者:abc</span>|<span>最后回复:abc 9-13</span></div></a></li>
+	
+	</div>
+	<a id="post"></a>
+	<div class="main_editor">
+		<textarea name="editor_input"  placeholder="请输入内容" class="j_editor_input editor_input"></textarea>
+	</div>
+	<script type="text/javascript" src="zepto.js"></script>
+	<script type="text/javascript">
+		var scrollPos=function(selector,time){
+			if(typeof selector =='undefined'){
+				return;
+			}
+			var numMatch = /^[0-9]+.?[0-9]*$/,
+				tm=numMatch.test(time)?time:200,
+				top=numMatch.test(selector)?
+				selector:(Object.prototype.toString.call(selector)=='[object Array]' ?
+				selector.offset()['top']:(typeof selector=='string'?
+				$(selector).offset()['top']:0));
+
+			setTimeout(function(){
+				window.scrollTo(0, top);
+			},tm);
+		}
+	</script>
+	<script type="text/javascript">
+		$('#_post').bind('click',function(e){
+			scrollPos('#post');
+			$('.j_editor_input')[0].focus();
+		});
+	</script>
+</body>
+</html>
